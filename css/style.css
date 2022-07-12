@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul li {
+
+    padding-left: 30px;
+
+    text-transform: uppercase;
+
+    font-weight: 600;
+    color: #fff;
+    margin: auto;
+}
+
+.navbar-toggler:focus{
+        box-shadow: none;
+    } 
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.height {
+    min-height: 88vh;
+}
+
+.banner_text h1 {
+
+    color: #fff;
+
+    font-size: 95px;
+}
+
+.banner_text span {
+
+    display: block;
+
+    background-color: #15a4fa;
+
+    width: 90%;
+
+    height: 1px;
+    margin: auto;
+}
+
+.banner_text p {
+
+    margin-top: 25px;
+
+    color: #fff;
+
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.btn {
+    color: #fff;
+    background-color: transparent;
+    border-color: #15a4fa;
+    padding: 10px 22px;
+    font-size: 16px;
+    transition: .5s all ease-in-out;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #15a4fa;
+}
+
+.icon {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 90%;
+
+    transform: translate(-50%, -86%);
+
+    color: #fff;
+
+    font-size: 20px;
+    animation: up-down 2s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes up-down {
+
+    0% {
+        top: 88%;
+
+    }
+
+    100% {
+        top: 96%;
+
+    }
+}
+
+.simple-text h1 {
+
+    color: #2d3950;
+
+    font-size: 34px;
+}
+
+.simple-text p {
+
+    color: #999999;
+
+    padding-top: 15px;
+
+    font-size: 18px;
+
+}
+
+.iconbox {
+
+    height: 90px;
+
+    width: 90px;
+
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,48baff+49,48baff+50,5fc3ff+50,5fc3ff+100 */
+    background: #48baff;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #48baff 0%, #48baff 49%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #48baff 0%, #48baff 49%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #48baff 0%, #48baff 49%, #48baff 50%, #5fc3ff 50%, #5fc3ff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+    /* IE6-9 */
+
+    color: #fff;
+
+    font-size: 35px;
+    line-height: 90px;
+
+    margin: auto;
+}
+
+.featutetext h3 {
+
+    color: #2d3950;
+
+    font-size: 18px;
+
+    padding-bottom: 10px;
+
+    padding-top: 17px;
+}
+
+.featutetext p {
+
+    color: #999;
+
+    font-size: 17px;
+}
+
+.showcasetext h3 {
+
+    margin-top: 60px;
+
+    color: #2d3950;
+}
+
+.showcasetext p {
+
+    font-size: 15px;
+
+    color: #999;
+    padding-bottom: 40px;
+}
+
+.showimages {
+    position: relative;
+}
+
+.showimages::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    background-color: #15a4fa;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.showimages:hover::before {
+    width: 50%;
+    height: 100%;
+    opacity: .5;
+}
+
+.showimages::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    background-color: #fa3715;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+
+.showimages:hover::after {
+    width: 50%;
+    height: 100%;
+    opacity: .5;
+}
+.showimages img{
+    width: 100%;
+}
+.showicon {
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .3s all ease-in-out;
+    z-index: 99;
+
+}
+
+
+.showicon i {
+
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    padding: 10px;
+
+    border-radius: 4px;
+}
+
+.showimages:hover .showicon {
+    opacity: 1;
+}
+
+.contact {
+    background-image: url(../images/contact-banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 90vh;
+    margin-top: 50px;
+    position: relative;
+    z-index: 111;
+}
+
+.contact-text{
+    z-index: 0;
+
+}
+.contact-text h2 {
+
+    padding-top: 66px;
+
+    color: #fff;
+}
+
+.contact-text p {
+    color: #999;
+}
+
+.contact::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: .9;
+    z-index: -1;
+}
+
+.contactform form{
+    margin-top: 30px;
+
+}
+
+.contactform form input{
+    width: 100%;
+    margin: 10px 0px;
+    padding: 9px;
+    border: none;
+    border-radius: 4px;
+    padding: 16px;
+    background-color: transparent;
+    border: 1px solid #999;
+    color: #999;
+    outline: none;
+    
+}
+
+
+.contactform form textarea{
+    width: 100%;
+    height: 180px;
+    margin: 10px 0px;
+    padding: 17px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #999;
+    color: #999;
+    outline: none;
+}
+
+.contactform form input::placeholder{
+    color: #999;
+}
+
+.contactform form textarea::placeholder{
+    color: #999;
+}
+
+.checkandsend{
+
+display: flex;
+
+justify-content: space-between;
+}
+
+.checkbox{
+
+display: flex;
+
+align-items: center;
+}
+.checkbox input{
+    width: 28px !important;
+}
+.checkbox p{
+    padding-top: 14px;
+    color: #999;
+}
+
+.send{
+
+width: 165px;
+}
+
+.send input{
+    padding: 12px !important;
+    border: none !important;
+    border: 1px solid #2196f3 !important;
+    transition: .5s all ease-in-out;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff !important;
+}
+
+.send input:hover{
+    background-color: #15a4fa;
+}
+.mainfooter{
+    
+display: flex;
+    
+justify-content: space-between;
+    
+align-items: center;
+    
+margin-top: 22px;
+}
+
+.copyright p{
+    color: #999;
+    font-size: 15px;
+    font-weight: 600;
+
+}
+.social ul{
+
+list-style: none;
+
+display: flex;
+}
+.social ul li{
+
+border: 1px solid #03a9f4;
+
+padding: 8px 13px;
+
+margin-left: 7px;
+
+border-radius: 3px;
+
+background-color: #03a9f4;
+
+color: #fff;
+}
